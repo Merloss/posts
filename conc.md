@@ -2,7 +2,7 @@
 title: "Sourcegraph/conc ile Go'da Concurrency'yi Kolaylaştır"
 short_description: "Sourcegraph/conc kütüphanesi ile Go'da goroutine yönetimini sadeleştirin ve concurrency'yi güçlendirin."
 tags: [go, concurrency, sourcegraph, goroutine, backend]
-image: "https://storage.kerim.im/images/sourcegraph_conc.svg"
+image: "https://storage.kerim.im/images/sourcegraph_conc.png"
 blurhash: "L47cqHK6EGwJ3r0]:ij|TV:%;FGH"
 published_at: "2025-04-23T12:00:00.000Z"
 ---
