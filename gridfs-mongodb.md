@@ -196,7 +196,3 @@ graph TD
 
 - [MongoDB GridFS Dokümantasyonu](https://www.mongodb.com/docs/manual/core/gridfs/)
 - [MongoDB Go Driver](https://pkg.go.dev/go.mongodb.org/mongo-driver)
-
-```
-
-```
