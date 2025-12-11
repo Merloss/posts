@@ -2,7 +2,7 @@
 title: "MongoDB GridFS ile File Storage: Temel Rehber"
 short_description: "MongoDB GridFS ile büyük dosyaları etkili bir şekilde depolayın ve yönetin."
 tags: [mongodb, gridfs, file storage, database, backend, golang]
-image: "https://storage.kerim.im/images/mongo_banner.png"
+image: "api/images/mongo.png"
 blurhash: "L30V6EieqDi1iyl@eBZ*i7k:g_lQ"
 published_at: "2025-06-09T20:01:00.000Z"
 ---
