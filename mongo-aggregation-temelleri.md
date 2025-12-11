@@ -2,7 +2,7 @@
 title: "MongoDB Aggregation Temelleri: Ana Kavramlar ve Örnekler"
 short_description: "MongoDB aggregation pipeline'ın temel kavramları, aşamaları ve pratik kullanım örnekleri."
 tags: [mongodb, database, aggregation, nosql]
-image: "api/images/mongo.png"
+image: "/api/images/mongo.png"
 blurhash: "L30V6EieqDi1iyl@eBZ*i7k:g_lQ"
 published_at: "2025-04-12T14:00:00.000Z"
 ---
