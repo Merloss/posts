@@ -2,7 +2,7 @@
 title: "Infrastructure as Code: Terraform"
 short_description: "Terraform ile altyapıyı kod olarak yönetmek."
 tags: [terraform, opentofu, iac, devops, aws, cloudflare, infrastructure]
-image: "https://storage.kerim.im/images/tf.png"
+image: "api/images/tf.png"
 blurhash: "L43b2tjv9pays=ogWTWUEaju-aay"
 published_at: "2026-05-23T12:00:00.000Z"
 ---
