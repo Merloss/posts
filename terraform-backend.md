@@ -2,7 +2,7 @@
 title: "Terraform Backend: Remote State Neden Şart?"
 short_description: "Terraform state'ini neden yerelde değil, remote backend'de tutmalısınız."
 tags: [terraform, opentofu, iac, devops, state, backend, aws]
-image: "api/images/tf.png"
+image: "/api/images/tf.png"
 blurhash: "L43b2tjv9pays=ogWTWUEaju-aay"
 published_at: "2026-05-23T15:00:00.000Z"
 ---
