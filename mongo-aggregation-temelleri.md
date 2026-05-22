@@ -26,7 +26,7 @@ Aggregation pipeline, MongoDB'de verilerin bir dizi işlem aşamasından (stages
 
 Diyelim ki bir `orders` koleksiyonunuz var ve her siparişte müşteri kimliği (`customerId`), toplam tutar (`total`) ve tarih (`date`) bulunuyor. Müşteri bazında toplam sipariş tutarını hesaplamak istiyorsunuz:
 
-```js
+```js [mongosh]
 db.orders.aggregate([
   { $match: { date: { $gte: ISODate("2025-01-01") } } },
   { $group: { _id: "$customerId", totalSpent: { $sum: "$total" } } },
@@ -42,7 +42,7 @@ db.orders.aggregate([
 
 Bir `users` koleksiyonunda kullanıcıların isimleri (`name`) ve yaşları (`age`) var. 30 yaşından büyük kullanıcıların sadece isimlerini almak istiyorsunuz:
 
-```js
+```js [mongosh]
 db.users.aggregate([
   { $match: { age: { $gt: 30 } } },
   { $project: { name: 1, _id: 0 } },
@@ -56,7 +56,7 @@ db.users.aggregate([
 
 Farklı koleksiyonlar arasında ilişki kurmak için `$lookup` kullanılır. Örneğin, `orders` koleksiyonundaki siparişlerin müşteri bilgilerini `customers` koleksiyonundan çekmek istiyorsunuz:
 
-```js
+```js [mongosh]
 db.orders.aggregate([
   { $match: { date: { $gte: ISODate("2025-01-01") } } },
   {
@@ -79,7 +79,7 @@ db.orders.aggregate([
 
 `orders` koleksiyonunda her sipariş için bir vergi alanı (`tax`) hesaplayıp eklemek istiyorsunuz. Vergi, toplam tutarın %10’u olsun:
 
-```js
+```js [mongosh]
 db.orders.aggregate([
   { $match: { date: { $gte: ISODate("2025-01-01") } } },
   { $addFields: { tax: { $multiply: ["$total", 0.1] } } },

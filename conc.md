@@ -46,7 +46,7 @@ Aşağıda, Sourcegraph/conc'un kullanımını gösteren iki pratik örnek sunuy
 Örnek 1: Paralel API Çağrıları ve Panic Koruması
 Birden fazla API'den veri çekmek istediğinizi varsayalım. Normalde bu işlem, sync.WaitGroup, goroutine'ler ve panic koruması için ek kod gerektirir. Sourcegraph/conc ile bu süreç oldukça basittir:
 
-```go
+```go [main.go]
 package main
 
 import (
@@ -97,7 +97,7 @@ Bu kodda, "api3" endpoint'i bir panic üretse bile `conc` bunu zarif bir şekild
 Örnek 2: İşçi Havuzu ile Concurrency Sınırlandırma
 Büyük bir dosya kümesini işlemek istediğinizde, concurrency'yi sınırlamak faydalı olabilir. Örneğin, 100 dosyayı aynı anda değil, 5 işçiyle işlemek istiyorsunuz:
 
-```go
+```go [main.go]
 package main
 
 import (

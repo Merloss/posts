@@ -49,7 +49,7 @@ go get go.mongodb.org/mongo-driver/mongo/gridfs
 
 ### Örnek: Dosya Yükleme ve İndirme
 
-```go
+```go [main.go]
 package main
 
 import (
